@@ -83,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="807" />
@@ -182,6 +182,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -259,8 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="807" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
