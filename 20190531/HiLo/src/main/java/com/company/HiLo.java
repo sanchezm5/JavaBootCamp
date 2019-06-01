@@ -19,7 +19,6 @@ public class HiLo {
         System.out.println("Enter your name: ");
         String name = myScanner.nextLine();
         System.out.println("OK, " + name + ", here are the rules:");
-        System.out.println(computerNum);
 
         do {
             System.out.println("Guess a number between 1 and 100");
