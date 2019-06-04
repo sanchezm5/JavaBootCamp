@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce8a4743-00cf-4e3d-a0ee-530c07a69e86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddFiveAndDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AddThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/AverageThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/DoubleAndAddFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/MultiplyThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../02-lesson/activities/katas/starter-code/U1M1L2Katas/src/main/java/com/company/SubtractTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/01-Hi-Lo/starter-code/HiLo/src/main/java/com/company/HiLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/01-Hi-Lo/starter-code/HiLo/src/main/java/com/company/HiLo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/U1M1L3Katas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/U1M1L3Katas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/AgeAgain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/AgeAgain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/RangeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/RangeChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../03-lesson/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../04-lesson/activities/katas/starter-code/RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../04-lesson/activities/katas/starter-code/RectPavingCompany/src/main/java/com/company/RectPavingCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../05-lesson/activities/katas/starter-code/U1M1L5Katas/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../05-lesson/activities/katas/starter-code/U1M1L5Katas/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../05-lesson/activities/katas/starter-code/U1M1L5Katas/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../05-lesson/activities/katas/starter-code/U1M1L5Katas/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190531/HowManyTimesTo7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190531/HowManyTimesTo7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190531/PrimeFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190531/PrimeFinder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190531/U1M1L3Katas/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190531/U1M1L3Katas/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190531/U1M1L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190531/U1M1L3Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inClass/Arrays/src/main/java/com/trilogyed/MinOrMaxArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../inClass/Arrays/src/main/java/com/trilogyed/MinOrMaxArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../inClass/ClassWorkConditionals/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../inClass/ClassWorkConditionals/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,16 +20,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state>
+              <caret selection-end-line="209" />
             </state>
           </provider>
         </entry>
@@ -55,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="398">
               <caret line="157" column="53" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
             </state>
           </provider>
@@ -64,7 +45,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,11 +55,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="557" />
-    <option name="y" value="24" />
-    <option name="width" value="1023" />
-    <option name="height" value="810" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -149,6 +129,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -214,27 +195,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.06.03 at 15h 16m 39s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 21h 27m 48s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 21h 42m 51s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 21h 55m 52s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 21h 56m 59s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 21h 57m 32s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.06.03 at 22h 11m 45s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest - 2019.06.03 at 22h 11m 48s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
@@ -244,30 +204,50 @@
     <history-entry file="AppTest - 2019.06.03 at 22h 14m 32s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 30m 47s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 38m 19s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 39m 39s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 43m 02s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 43m 04s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 44m 25s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.04 at 08h 45m 25s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25294888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.28313252" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29036143" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46239555" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32918397" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46144578" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32896462" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.28313252" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -276,6 +256,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32896462" />
     </layout>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
@@ -286,15 +267,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="398">
           <caret line="157" column="53" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state>
+          <caret selection-end-line="209" />
         </state>
       </provider>
     </entry>

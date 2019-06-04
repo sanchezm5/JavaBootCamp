@@ -6,11 +6,16 @@ public class App {
         String[] strArr = {"ant", "bat", "cat"};
 
 //        System.out.println(total(arr));
-//        System.out.println(reverse(arr));
 //        System.out.println(totalOdd(arr));
+//        System.out.println(totalEven(arr));
+//        System.out.println(secondLargestNumber(arr));
+//        System.out.println(reverse(arr));
+//        System.out.println(everyThird(arr));
+//        System.out.println(lessThanFive(arr));
+//        System.out.println(splitAtFive(arr));
 //        System.out.println(swapFirstAndLast(strArr));
 //        System.out.println(concatenateString(strArr));
-        System.out.println(evensAndOdds(strArr));
+//        System.out.println(evensAndOdds(strArr));
     }
 
     // Total
@@ -177,24 +182,25 @@ public class App {
         if (arr.length % 2 == 0) {
             evenArrSize = arr.length / 2;
             oddArrSize = arr.length / 2;
-        } else {
-            evenArrSize = (arr.length + 1) / 2;
+        }
+        if (arr.length % 2 == 1) {
+            evenArrSize = (arr.length /2) + 1;
             oddArrSize = arr.length / 2;
         }
 
         String[] evenArr = new String[evenArrSize];
         String[] oddArr = new String[oddArrSize];
         int evenIndex = 0;
-        int oddIndex = 1;
+        int oddIndex = 0;
         String [][] finalArray = {evenArr, oddArr};
 
         for (int i = 0; i < arr.length; i++) {
             if(i % 2 == 0) {
                 evenArr[evenIndex] = arr[i];
-                evenIndex = evenIndex +  2;
+                evenIndex++;
             } else {
                 oddArr[oddIndex] = arr[i];
-                oddIndex += 2;
+                oddIndex++;
             }
         }
         return finalArray;
