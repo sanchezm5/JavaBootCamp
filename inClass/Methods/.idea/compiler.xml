@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="U1-M1-Summative-Sanchez-Maria" />
+        <module name="Methods" />
       </profile>
     </annotationProcessing>
   </component>
