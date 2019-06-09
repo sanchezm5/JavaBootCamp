@@ -8,9 +8,9 @@ package com.company;
 // Sedan inherits from Car
 public class Sedan extends Car {
 
-    // Private Data Members
-    private int numDoors;
-    private boolean poweredWindows;
+    // Data Members
+    protected int numDoors;
+    protected boolean poweredWindows;
 
     // Sedan Getters and Setters
     public int getNumDoors() {

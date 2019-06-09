@@ -13,9 +13,9 @@ import com.company.interfaces.Vehicle;
 public class Car implements Vehicle {
 
     // Private Data Members
-    private String make;
-    private String model;
-    private int milesTraveled;
+    protected String make;
+    protected String model;
+    protected int milesTraveled;
 
     // Vehicle Methods
     public void drive(int miles) {
