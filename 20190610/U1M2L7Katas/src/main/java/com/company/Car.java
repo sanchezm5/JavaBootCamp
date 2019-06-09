@@ -12,7 +12,7 @@ import com.company.interfaces.Vehicle;
 // Implementing the Interface
 public class Car implements Vehicle {
 
-    // Private Data Members
+    // Data Members
     protected String make;
     protected String model;
     protected int milesTraveled;
