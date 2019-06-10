@@ -6,7 +6,7 @@ Valid Number (Loops):
         -If the user enters a number less than 1 or greater than 10, display the following error message and prompt
          the user for another entry: "You must enter a number between 1 and 10, please try again."
         -When the user enters a valid number, print the number to the screen and exit.
-*/
+ */
 
 package com.trilogyed;
 
