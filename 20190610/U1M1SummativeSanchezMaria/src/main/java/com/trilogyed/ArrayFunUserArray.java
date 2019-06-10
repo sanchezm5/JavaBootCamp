@@ -11,7 +11,7 @@ public class ArrayFunUserArray {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        // Declare 5 variables to represent each integer
+        // Declare variable to represent each integer, a counter initialized to 0 and an array of length 5
         int num;
         int counter = 0;
         int[] arr = new int[5];
@@ -19,7 +19,7 @@ public class ArrayFunUserArray {
         System.out.println("You will enter 5 integers. Let's begin!" + "\n");
 
         do {
-            // Prompt the user to enter 4 more integers
+            // Prompt the user to enter 5 integers
             System.out.print("Enter an integer: ");
 
             // Read in the number and convert it to an integer
