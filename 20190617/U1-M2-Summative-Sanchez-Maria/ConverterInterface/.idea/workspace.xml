@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f87cbb-1160-4c72-9fc9-6d3f2ee4e50e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../20190607/UserIO/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190607/UserIO/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../20190607/UserIO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190607/UserIO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../20190614/U1M1L5Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190614/U1M1L5Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../20190614/U1M3L5PBDMariaSanchez/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190614/U1M3L5PBDMariaSanchez/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
