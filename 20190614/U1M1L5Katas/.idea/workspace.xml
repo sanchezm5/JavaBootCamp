@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0fd1393-b5ed-4428-94be-4cc3524eff02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L4Katas/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L4Katas/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L4Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L4Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L5PBDMariaSanchez/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L5PBDMariaSanchez/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="88" column="150" selection-start-line="88" selection-start-column="150" selection-end-line="88" selection-end-column="150" />
+            <state relative-caret-position="405">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#0#1167#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -95,10 +95,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="660" />
-    <option name="y" value="43" />
-    <option name="width" value="710" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="15" />
+    <option name="y" value="28" />
+    <option name="width" value="1136" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -140,6 +140,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -188,8 +189,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="660" y="43" width="710" height="812" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -199,12 +199,12 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.07552581" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37916666" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="88" column="150" selection-start-line="88" selection-start-column="150" selection-end-line="88" selection-end-column="150" />
+        <state relative-caret-position="405">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="e#0#1167#0" expanded="true" />
             <element signature="imports" expanded="true" />
