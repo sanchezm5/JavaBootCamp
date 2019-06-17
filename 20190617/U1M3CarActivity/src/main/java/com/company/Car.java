@@ -10,12 +10,8 @@ public class Car {
     private int miles;
 
     // Constructor
-    public Car(String model, String make, String year, String color, int miles) {
-        this.model = model;
-        this.make = make;
-        this.year = year;
-        this.color = color;
-        this.miles = miles;
+    public Car() {
+
     }
 
     // Getters and Setters
@@ -59,4 +55,13 @@ public class Car {
         this.miles = miles;
     }
 
+    // Methods
+    public void printCarInfo() {
+        System.out.println("Make: " + getMake());
+        System.out.println("Model: " + getModel());
+        System.out.println("Color: " + getColor());
+        System.out.println("Year: " + getYear());
+        System.out.println("Miles: " + getMiles());
+        System.out.println("--------------------------");
+    }
 }
