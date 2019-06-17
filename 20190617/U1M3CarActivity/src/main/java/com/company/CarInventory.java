@@ -61,7 +61,6 @@ public class CarInventory {
                 System.out.println("Invalid input. Please input a valid index.");
             }
         }
-
     }
 
     // List all cars in inventory

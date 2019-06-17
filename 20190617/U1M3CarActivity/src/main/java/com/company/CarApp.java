@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class CarApp {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         CarInventory carInventory = new CarInventory();
 
