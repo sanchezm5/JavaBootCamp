@@ -14,6 +14,7 @@
  * 5.5 - 0.5
  * 10.8 / 2.2
  */
+
 package com.company;
 
 public class CalculateObject {
