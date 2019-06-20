@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Day Converter
+  description: A simple service that converts the number into the name of the day.
+  version: 0.0.1
+servers: 
+    - url: http://localhost:8080
+      description: Local dev server
+
+paths:
+  /day/{dayNumber}:
+    get:
+      summary: Converts number into name of day
+      description: A simple demo service that simply converts your input day number into the name of the day as long as it is in the range 1 - 7.
+      parameters: 
+        - name: dayNumber
+          in: path
+          required: true
+          description: The value of the name of the day that the number converts to.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 7
+      responses:
+        '200':
+          description: The name of the day that the number converts to.
+          content:
+            application/json:
+              schema:
+                type: integer
+        '422':
+          description: You must enter a number between 1 and 7.
