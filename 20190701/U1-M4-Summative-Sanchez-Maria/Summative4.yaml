@@ -1,0 +1,87 @@
+openapi: 3.0.0
+info:
+  title: Quote API, Word API, and Magic 8-ball Service API
+  description: >-
+    A simple service that allows you to get the quote-of-the-day, word-of-the-day, and an answer response
+    to a question given to the Magic 8-ball.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /quote:
+    get:
+      summary: Retrieves the quote-of-the-day in the API
+      responses:
+        '200':
+          description: A quote object
+          content:
+            application/json:
+              schema:
+                # we are referencing the Quote object definition found at the bottom of the file
+                $ref: '#/components/schemas/Quote'
+        '422':
+          description: Quote could not be found
+  /word:
+    get:
+      summary: Retrieves the word-of-the-day in the API
+      responses:
+        '200':
+          description: A definition object
+          content:
+            application/json:
+              schema:
+                # we are referencing the Definition object definition found at the bottom of the file
+                $ref: '#/components/schemas/Definition'
+        '422':
+          description: Definition could not be found
+  /magic:
+    post:
+      summary: Creates a new magic 8-ball response entry with the given information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              # we are referencing the Answer object definition found at the bottom of the file
+              $ref: '#/components/schemas/Answer'
+      responses:
+        '201':
+          description: An answer object
+          content:
+            application/json:
+              schema:
+                # we are referencing the Answer object definition found at the bottom of the file
+                $ref: '#/components/schemas/Answer'
+        '422':
+          description: Incomplete answer information. Some required fields missing.
+# This section defines the Quote, Definition, and Answer objects that goes back and forth as JSON
+components:
+  schemas:
+    Quote:
+      properties:
+        author:
+          type: string
+        quote:
+          type: string
+      required: 
+        - author
+        - quote
+    Definition:
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+      required:
+        - word
+        - definition
+    Answer:
+      properties:
+        question:
+          type: string
+        answer: 
+          type: string
+      required:
+        - question
+        - answer
