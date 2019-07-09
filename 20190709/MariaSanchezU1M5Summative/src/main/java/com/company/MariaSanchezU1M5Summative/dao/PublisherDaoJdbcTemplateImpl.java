@@ -96,6 +96,7 @@ public class PublisherDaoJdbcTemplateImpl implements PublisherDao {
 
     // Helper Methods
     private Publisher mapRowToPublisher(ResultSet rs, int rowNum) throws SQLException {
+
         Publisher publisher = new Publisher();
         publisher.setId(rs.getInt("publisher_id"));
         publisher.setName(rs.getString("name"));

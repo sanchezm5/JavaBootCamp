@@ -99,6 +99,7 @@ public class AuthorDaoJdbcTemplateImpl implements AuthorDao {
 
     // Helper Methods
     private Author mapRowToAuthor(ResultSet rs, int rowNum) throws SQLException {
+
         Author author = new Author();
         author.setId(rs.getInt("author_id"));
         author.setFirstName(rs.getString("first_name"));

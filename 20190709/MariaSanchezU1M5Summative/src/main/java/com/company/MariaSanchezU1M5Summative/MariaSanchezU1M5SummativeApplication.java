@@ -9,5 +9,4 @@ public class MariaSanchezU1M5SummativeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MariaSanchezU1M5SummativeApplication.class, args);
 	}
-
 }

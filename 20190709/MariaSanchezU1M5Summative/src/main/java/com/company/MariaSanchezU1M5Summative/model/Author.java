@@ -3,7 +3,6 @@ package com.company.MariaSanchezU1M5Summative.model;
 import java.util.Objects;
 
 public class Author {
-
     // Properties
     private int id;
     private String firstName;

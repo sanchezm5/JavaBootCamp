@@ -1,7 +1,6 @@
 package com.company.MariaSanchezU1M5Summative.dao;
 
 import com.company.MariaSanchezU1M5Summative.model.Author;
-
 import java.util.List;
 
 public interface AuthorDao {

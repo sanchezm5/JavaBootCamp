@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Book {
-
     // Properties
     private int id;
     private String isbn;
