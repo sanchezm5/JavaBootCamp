@@ -1,0 +1,155 @@
+openapi: 3.0.0
+info:
+  title: Tasker Service
+  description:
+    A simple task-tracking service that allows CRUD operations with tasks and has an advertisement service feature.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:7979'
+    description: Local dev server
+paths:
+  /tasks:
+    post:
+      summary: Creates a new task with the given information.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '201':
+          description: A Task object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskWithAd'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete task information. Some required fields missing.
+    get:
+      summary: Retrieves all entries of the tasks.
+      responses:
+        '200':
+          description: A Task object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskWithAd'
+  /tasks/{id}:
+    get:
+      summary: Retrieves the entry for the task with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the task you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskWithAd'
+    delete:
+      summary: Deletes the entry for the task with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the task you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task successfully deleted.
+    put:
+      summary: Updated the entry for the task with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the task you would like to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '200':
+          description: Task successfully updated.
+        '422':
+          description: Task ID on path must match the ID in the Task object.
+  /tasks/category/{category}:
+    get:
+      summary: Retrieves the entry/entries for the task(s) with the given category.
+      parameters:
+        - name: category
+          in: path
+          required: true
+          description: Category of the task(s) you would like to retrieve.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Task object matching given category.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskWithAd'
+components:
+  schemas:
+    Task:
+      properties:
+        id:
+          type: integer
+        description:
+          type: string
+        createDate:
+          type: string
+          format: date
+        dueDate:
+          type: string
+          format: date
+        category:
+          type: string
+      required: 
+        - description
+        - createDate
+        - dueDate
+        - category
+    TaskWithAd:
+      properties:
+        id:
+          type: integer
+        description:
+          type: string
+        createDate:
+          type: string
+          format: date
+        dueDate:
+          type: string
+          format: date
+        category:
+          type: string
+        advertisement:
+          type: string
+      required:
+        - id
+        - description
+        - createDate
+        - dueDate
+        - category
+        - advertisement
