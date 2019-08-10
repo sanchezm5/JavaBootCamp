@@ -75,4 +75,15 @@ public class Comment implements Serializable {
     public int hashCode() {
         return Objects.hash(getCommentId(), getPostId(), getCreateDate(), getCommenterName(), getComment());
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "commentId=" + commentId +
+                ", postId=" + postId +
+                ", createDate=" + createDate +
+                ", commenterName='" + commenterName + '\'' +
+                ", comment='" + comment + '\'' +
+                '}';
+    }
 }

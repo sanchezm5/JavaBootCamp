@@ -24,9 +24,6 @@ import static org.mockito.Mockito.mock;
 @SpringBootTest
 public class ServiceLayerTest {
 
-    public static final String EXCHANGE = "comment-exchange";
-    public static final String ROUTING_KEY = "comment.post.serviceLayer";
-
     private PostClient postClient;
     private CommentClient commentClient;
     private RabbitTemplate rabbitTemplate;
@@ -46,8 +43,8 @@ public class ServiceLayerTest {
     public void saveAndFindPost() {
         PostViewModel postViewModel = new PostViewModel();
         postViewModel.setPostDate(LocalDate.of(2019, 8, 8));
-        postViewModel.setPosterName("Poster Name");
-        postViewModel.setPost("Post");
+        postViewModel.setPosterName("Poster Name 1");
+        postViewModel.setPost("Post 1");
 
         postViewModel = service.savePost(postViewModel);
 
@@ -67,8 +64,8 @@ public class ServiceLayerTest {
 
         PostViewModel postViewModel = new PostViewModel();
         postViewModel.setPostDate(LocalDate.of(2019, 8, 8));
-        postViewModel.setPosterName("Poster Name");
-        postViewModel.setPost("Post");
+        postViewModel.setPosterName("Poster Name 1");
+        postViewModel.setPost("Post 1");
 
         postViewModel = service.savePost(postViewModel);
 
@@ -99,24 +96,10 @@ public class ServiceLayerTest {
 
         List<Post> posts = new ArrayList<>();
 
-        Post post3 = new Post();
-        post3.setPostId(2);
-        post3.setPostDate(LocalDate.of(2019, 8,8));
-        post3.setPosterName("Poster Name 1");
-        post3.setPost("Post 2");
-
-        Post post4 = new Post();
-        post4.setPostDate(LocalDate.of(2019, 8, 8));
-        post4.setPosterName("Poster Name 1");
-        post4.setPost("Post 2");
-
         posts.add(post1);
-        posts.add(post3);
 
         doReturn(post1).when(postClient).createPost(post2);
-        doReturn(post3).when(postClient).createPost(post4);
         doReturn(post1).when(postClient).findPost(1);
-        doReturn(post3).when(postClient).findPost(2);
         doReturn(posts).when(postClient).findAllPosts();
         doReturn(posts).when(postClient).findPostsByPoster("Poster Name 1");
     }

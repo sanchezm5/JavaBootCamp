@@ -1,5 +1,10 @@
 package com.trilogyed.stwitter.util.messages;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -7,6 +12,8 @@ public class Comment {
 
     private int commentId;
     private int postId;
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate createDate;
     private String commenterName;
     private String comment;

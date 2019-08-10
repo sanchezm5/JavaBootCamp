@@ -17,15 +17,15 @@ public class MessageListener {
     }
 
     @RabbitListener(queues = CommentQueueConsumerApplication.QUEUE_NAME)
-    public void receiveMessage(Comment comment) {
-        System.out.println("Invoking comment service for " + comment.toString());
-        Comment addedComment = commentClient.createComment(comment);
+    public void receiveMessage(Comment commentMsg) {
+        System.out.println("Invoking comment service for " + commentMsg.toString());
+        Comment addedComment = commentClient.createComment(commentMsg);
         System.out.println("Comments added " + addedComment.toString());
     }
 
     private void simulateSlowService() {
         try {
-            long time = 1000L;
+            long time = 1500L;
             Thread.sleep(time);
         } catch (InterruptedException e) {
             throw new IllegalStateException(e);

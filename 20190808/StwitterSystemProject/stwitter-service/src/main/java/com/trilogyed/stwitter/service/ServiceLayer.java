@@ -18,13 +18,10 @@ import java.util.List;
 public class ServiceLayer {
 
     public static final String EXCHANGE = "comment-exchange";
-    public static final String ROUTING_KEY = "comment.post.serviceLayer";
-
+    public static final String ROUTING_KEY = "comment.create.serviceLayer";
 
     private RabbitTemplate rabbitTemplate;
-
     private PostClient postClient;
-
     private CommentClient commentClient;
 
     public ServiceLayer() {
@@ -100,45 +97,6 @@ public class ServiceLayer {
         return postViewModelList;
     }
 
-    public List<PostViewModel> findAllPosts() {
-        List<Post> posts = postClient.findAllPosts();
-        List<PostViewModel> postViewModels = new ArrayList<>();
-        for(Post post : posts) {
-            PostViewModel postViewModel = buildPostViewModel(post);
-            postViewModels.add(postViewModel);
-        }
-        return postViewModels;
-    }
-
-    @Transactional
-    public void updatePost(PostViewModel postViewModel) {
-        Post post = new Post();
-        post.setPostId(postViewModel.getPostId());
-        post.setPostDate(postViewModel.getPostDate());
-        post.setPosterName(postViewModel.getPosterName());
-        post.setPost(postViewModel.getPost());
-
-        postClient.updatePost(post.getPostId(), post);
-
-        List<CommentViewModel> commentList = postViewModel.getComments();
-        commentList.stream()
-                .forEach(comment -> {
-                    System.out.println("Sending comments...");
-                    rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, comment);
-                    System.out.println("Comment sent to queue for update...");
-                });
-    }
-
-    @Transactional
-    public void removePost(int id) {
-        List<Comment> comments = commentClient.findCommentByPost(id);
-        comments.stream()
-                .forEach(comment -> {
-                    commentClient.deleteComment(comment.getCommentId());
-                });
-        postClient.deletePost(id);
-    }
-
     // Helper Methods
     private PostViewModel buildPostViewModel(Post post) {
         PostViewModel postViewModel = new PostViewModel();
@@ -171,7 +129,7 @@ public class ServiceLayer {
 
     private void simulateSlowService() {
         try {
-            long time = 1000L;
+            long time = 1500L;
             Thread.sleep(time);
         } catch (InterruptedException e) {
             throw new IllegalStateException(e);

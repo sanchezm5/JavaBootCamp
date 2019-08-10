@@ -1,9 +1,10 @@
 package com.trilogyed.stwitter.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Post {
+public class Post implements Serializable {
 
     private int postId;
     private LocalDate postDate;
@@ -58,4 +59,13 @@ public class Post {
         return Objects.hash(getPostId(), getPostDate(), getPosterName(), getPost());
     }
 
+    @Override
+    public String toString() {
+        return "Post{" +
+                "postId=" + postId +
+                ", postDate=" + postDate +
+                ", posterName='" + posterName + '\'' +
+                ", post='" + post + '\'' +
+                '}';
+    }
 }

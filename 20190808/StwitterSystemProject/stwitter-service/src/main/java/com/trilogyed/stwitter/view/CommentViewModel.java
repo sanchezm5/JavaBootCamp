@@ -10,7 +10,7 @@ import java.util.Objects;
 public class CommentViewModel {
 
     private int commentId;
-    private int postId;
+    private Integer postId;
     @NotNull(message = "Please supply a date.")
     private LocalDate createDate;
     @NotEmpty(message = "Please supply a name for the commenter.")
@@ -26,11 +26,11 @@ public class CommentViewModel {
         this.commentId = commentId;
     }
 
-    public int getPostId() {
+    public Integer getPostId() {
         return postId;
     }
 
-    public void setPostId(int postId) {
+    public void setPostId(Integer postId) {
         this.postId = postId;
     }
 
@@ -62,12 +62,12 @@ public class CommentViewModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Comment comment1 = (Comment) o;
-        return getCommentId() == comment1.getCommentId() &&
-                getPostId() == comment1.getPostId() &&
-                Objects.equals(getCreateDate(), comment1.getCreateDate()) &&
-                Objects.equals(getCommenterName(), comment1.getCommenterName()) &&
-                Objects.equals(getComment(), comment1.getComment());
+        CommentViewModel that = (CommentViewModel) o;
+        return getCommentId() == that.getCommentId() &&
+                Objects.equals(getPostId(), that.getPostId()) &&
+                Objects.equals(getCreateDate(), that.getCreateDate()) &&
+                Objects.equals(getCommenterName(), that.getCommenterName()) &&
+                Objects.equals(getComment(), that.getComment());
     }
 
     @Override
