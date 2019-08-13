@@ -70,11 +70,11 @@ public class GameStoreInventoryServiceTest {
         gameDao = mock(GameDaoJdbcTemplateImpl.class);
 
         Game game = new Game();
-        game.setGameId(3);
+        game.setGameId(1);
         game.setTitle("Just Dance 2020");
         game.setErsbRating("Everyone");
         game.setDescription("A dance rhythm game developed by Ubisoft");
-        game.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        game.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         game.setStudio("Game Studio");
         game.setQuantity(5);
 
@@ -82,7 +82,7 @@ public class GameStoreInventoryServiceTest {
         game1.setTitle("Just Dance 2020");
         game1.setErsbRating("Everyone");
         game1.setDescription("A dance rhythm game developed by Ubisoft");
-        game1.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        game1.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         game1.setStudio("Game Studio");
         game1.setQuantity(5);
 
@@ -90,7 +90,7 @@ public class GameStoreInventoryServiceTest {
         gameList.add(game);
 
         doReturn(game).when(gameDao).addGame(game1);
-        doReturn(game).when(gameDao).getGame(3);
+        doReturn(game).when(gameDao).getGame(1);
         doReturn(gameList).when(gameDao).getAllGames();
         doReturn(gameList).when(gameDao).getGamesByStudio("Game Studio");
         doReturn(gameList).when(gameDao).getGamesByErsbRating("Everyone");
@@ -136,7 +136,7 @@ public class GameStoreInventoryServiceTest {
         invoice.setState("NJ");
         invoice.setZipcode("07000");
         invoice.setItemType("Games");
-        invoice.setItemId(3);
+        invoice.setItemId(1);
         invoice.setUnitPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         invoice.setQuantity(2);
         invoice.setSubtotal(new BigDecimal(40.00).setScale(2, RoundingMode.HALF_UP));
@@ -151,7 +151,7 @@ public class GameStoreInventoryServiceTest {
         invoice1.setState("NJ");
         invoice1.setZipcode("07000");
         invoice1.setItemType("Games");
-        invoice1.setItemId(3);
+        invoice1.setItemId(1);
         invoice1.setUnitPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         invoice1.setQuantity(2);
         invoice1.setSubtotal(new BigDecimal(40.00).setScale(2, RoundingMode.HALF_UP));
@@ -163,7 +163,7 @@ public class GameStoreInventoryServiceTest {
         invoiceList.add(invoice);
 
         doReturn(invoice).when(invoiceDao).addInvoice(invoice1);
-        doReturn(invoice).when(invoiceDao).getInvoice(3);
+        doReturn(invoice).when(invoiceDao).getInvoice(1);
         doReturn(invoiceList).when(invoiceDao).getAllInvoices();
     }
 
@@ -237,7 +237,7 @@ public class GameStoreInventoryServiceTest {
         gameVM.setTitle("Just Dance 2020");
         gameVM.setErsbRating("Everyone");
         gameVM.setDescription("A dance rhythm game developed by Ubisoft");
-        gameVM.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        gameVM.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         gameVM.setStudio("Game Studio");
         gameVM.setQuantity(5);
 
@@ -256,7 +256,7 @@ public class GameStoreInventoryServiceTest {
         gameVM.setTitle("Just Dance 2020");
         gameVM.setErsbRating("Everyone");
         gameVM.setDescription("A dance rhythm game developed by Ubisoft");
-        gameVM.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        gameVM.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         gameVM.setStudio("Game Studio");
         gameVM.setQuantity(5);
 
@@ -272,7 +272,7 @@ public class GameStoreInventoryServiceTest {
         gameVM.setTitle("Just Dance 2020");
         gameVM.setErsbRating("Everyone");
         gameVM.setDescription("A dance rhythm game developed by Ubisoft");
-        gameVM.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        gameVM.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         gameVM.setStudio("Game Studio");
         gameVM.setQuantity(5);
 
@@ -288,7 +288,7 @@ public class GameStoreInventoryServiceTest {
         gameVM.setTitle("Just Dance 2020");
         gameVM.setErsbRating("Everyone");
         gameVM.setDescription("A dance rhythm game developed by Ubisoft");
-        gameVM.setPrice(new BigDecimal(19.99).setScale(2, RoundingMode.HALF_UP));
+        gameVM.setPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         gameVM.setStudio("Game Studio");
         gameVM.setQuantity(5);
 
@@ -356,7 +356,7 @@ public class GameStoreInventoryServiceTest {
         orderVM.setState("NJ");
         orderVM.setZipcode("07000");
         orderVM.setItemType("Games");
-        orderVM.setItemId(3);
+        orderVM.setItemId(1);
         orderVM.setQuantity(2);
 
         InvoiceViewModel fromService = gameStoreInventoryService.saveInvoice(orderVM);
@@ -368,7 +368,7 @@ public class GameStoreInventoryServiceTest {
         invoiceVM.setState("NJ");
         invoiceVM.setZipcode("07000");
         invoiceVM.setItemType("Games");
-        invoiceVM.setItemId(3);
+        invoiceVM.setItemId(1);
         invoiceVM.setQuantity(2);
         invoiceVM.setUnitPrice(new BigDecimal(20.00).setScale(2, RoundingMode.HALF_UP));
         invoiceVM.setSubtotal(new BigDecimal(40.00).setScale(2, RoundingMode.HALF_UP));

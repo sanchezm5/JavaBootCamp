@@ -264,24 +264,26 @@ public class GameStoreInventoryService {
     @Transactional
     public InvoiceViewModel saveInvoice(OrderViewModel orderViewModel) {
         Invoice invoice = new Invoice();
+
         invoice.setName(orderViewModel.getName());
         invoice.setStreet(orderViewModel.getStreet());
         invoice.setCity(orderViewModel.getCity());
         invoice.setState(orderViewModel.getState().toUpperCase());
-        invoice.setState(orderViewModel.getZipcode());
-        invoice.setItemType(orderViewModel.getItemType());
+        invoice.setZipcode(orderViewModel.getZipcode());
+        invoice.setItemType(orderViewModel.getItemType().toLowerCase());
         invoice.setItemId(orderViewModel.getItemId());
         invoice.setQuantity(orderViewModel.getQuantity());
 
         // Check for valid state to get sales tax rate
         SalesTaxRate tax = salesTaxRateDao.getSalesTaxRate(invoice.getState());
+
         if (tax.getRate() == null) {
-            throw new IllegalArgumentException("Invalid state entry");
+            throw new IllegalArgumentException("Invalid state entry ");
         }
         invoice.setTax(tax.getRate());
 
         // Check for valid item types to get processing fee
-        switch(invoice.getItemType().toLowerCase()) {
+        switch(invoice.getItemType()) {
             case "console":
             case "consoles":
                 invoice.setItemType("Consoles");
@@ -297,11 +299,11 @@ public class GameStoreInventoryService {
                 invoice.setItemType("T-Shirts");
                 break;
             default:
-                throw new IllegalArgumentException("Invalid item-type entry");
+                throw new IllegalArgumentException("Invalid item-type entry given");
         }
 
         ProcessingFee processingFee = processingFeeDao.getProcessingFee(invoice.getItemType());
-        if (processingFee == null) {
+        if (processingFee.getFee() == null) {
             throw new IllegalArgumentException("Invalid item-type entry");
         }
 
@@ -331,7 +333,7 @@ public class GameStoreInventoryService {
                 break;
 
             case "Games":
-                Game game = gameDao.getGame(invoice.getItemId());
+                Game game = gameDao.getGame(orderViewModel.getItemId());
                 if (game == null) {
                     throw new IllegalArgumentException("Invalid item-id entry");
                 }
@@ -359,11 +361,13 @@ public class GameStoreInventoryService {
                 }
                 invoice.setUnitPrice(console.getPrice());
                 break;
+            default:
+                throw new IllegalArgumentException("Product type is not valid.");
         }
 
         // Calculate subtotal
         BigDecimal subtotal;
-        subtotal = invoice.getUnitPrice().multiply(BigDecimal.valueOf(invoice.getQuantity()).setScale(2, RoundingMode.HALF_UP));
+        subtotal = invoice.getUnitPrice().multiply(BigDecimal.valueOf(invoice.getQuantity())).setScale(2, RoundingMode.HALF_UP);
         invoice.setSubtotal(subtotal);
 
         // Calculate sales tax
@@ -373,16 +377,12 @@ public class GameStoreInventoryService {
 
         // Calculate total
         BigDecimal total;
-        total = invoice.getSubtotal().add(invoice.getTax().add(invoice.getProcessingFee()));
+        total = invoice.getSubtotal().add(invoice.getTax().add(invoice.getProcessingFee())).setScale(2, RoundingMode.HALF_UP);
         invoice.setTotal(total);
 
-        invoiceDao.addInvoice(invoice);
+        invoice = invoiceDao.addInvoice(invoice);
 
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-
-        invoiceViewModel.setInvoiceId(invoice.getInvoiceId());
-
-        return invoiceViewModel;
+        return buildInvoiceViewModel(invoice);
     }
 
     private ConsoleViewModel buildConsoleViewModel(Console console) {
