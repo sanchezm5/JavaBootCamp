@@ -1,8 +1,6 @@
 ## Tasker Service Project
 
-Tasker is a simple task-tracking web service. The team that began development on this project was disbanded when some of the developers were pulled into another project and two key members left the company. This project had limited documentation (included below) and was left in an unknown state. 
-
-Your task is to pick this project back up and complete the code. The existing code has an unknown number of bugs; you must fix all of these issues as part of your implementation.
+Tasker is a simple task-tracking web service. 
 
 ## Documentation
 
@@ -73,7 +71,6 @@ The revenue department has requested a feature to incorporate an ad server that 
 * Modify the Adserver Service to use the Spring Cloud Config Server for all of its configuration settings.
 * Modify the Adserver Service to register with the Eureka Service Registry.
 * Make sure the Tasker Service uses the Eureka Service Registry to find the Adserver.
-* Make sure the Tasker Service uses a Feign client to interact with the Adserver.
 * Make sure that all integrations between components is done via Dependency Injection.
 
 ## Additional Requirements
