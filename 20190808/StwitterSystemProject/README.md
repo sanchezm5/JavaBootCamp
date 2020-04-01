@@ -1,10 +1,10 @@
 # **Stwitter System Project**
 
-### Stwitter is a simplified social media service that allows a user to create posts, search for posts by name of the poster or an id number, and add comments to posts that have been created.
+Stwitter is a simplified social media service that allows a user to create posts, search for posts by name of the poster or an id number, and add comments to posts that have been created.
 
 ## System Design
 
-#### The Stwitter service has been designed with Microservices, Feign client, a Comment Queue Consumer, Caching, Config Server and Eureka.
+The Stwitter service has been designed with Microservices, Feign client, a Comment Queue Consumer, Caching, Config Server and Eureka.
 
 ## Running the Program
 
