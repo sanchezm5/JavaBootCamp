@@ -6,8 +6,6 @@ Stwitter is a simplified social media service that allows a user to create posts
 
 The Stwitter service has been designed with Microservices, Feign client, a Comment Queue Consumer, Caching, Config Server and Eureka.
 
-![stwitter-system](images/stwitter-system.png)
-
 ## Running the Program
 
 1. Open each project in IntelliJ IDEA
